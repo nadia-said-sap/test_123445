@@ -1,0 +1,16 @@
+ID: test_123445
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: NADIA_TEST_GIT_DB
+   type: hdb
+   path: NADIA_TEST_GIT_DB
+   requires:
+    - name: hdi_NADIA_TEST_GIT_DB
+
+resources:
+ - name: hdi_NADIA_TEST_GIT_DB
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
